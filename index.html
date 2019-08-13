@@ -38,8 +38,24 @@
           <dd><div class="skills-level" style="width: 5%;">5%</div></dd>
         </dl>
       </section>
+    
     </main>
     <footer>
+        <form name="comment" action="comment.php" method="post">
+            <p>
+              <label>Ваше имя:</label>
+              <input type="text" name="name" />
+            </p>
+            <p>
+              <label>Ваш комментарий:</label>
+              <br />
+              <textarea name="text_comment" cols="30" rows="50"></textarea>
+            </p>
+            <p>
+              <input type="hidden" name="page_id" value="150" />
+              <input type="submit" value="Отправить комментарий" />
+            </p>
+          </form>
       Подвал сайта
       <p class="foters">*создано на основе курса из <a href="https://htmlacademy.ru/courses">"HTMLACADEMY"</a><p>
     </footer>
